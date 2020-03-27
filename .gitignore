@@ -13,3 +13,5 @@ __pycache__
 .eggs
 *.egg-info
 run.sh
+tutorials/work/
+tutorials/*.jpg

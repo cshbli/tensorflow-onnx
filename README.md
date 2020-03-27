@@ -47,42 +47,16 @@ The common issues we run into we try to document here [Troubleshooting Guide](Tr
 ## Install TensorFlow
 If you don't have tensorflow installed already, install the desired tensorflow build, for example:
 ```
-pip install tensorflow
-or
-pip install tensorflow-gpu
+pip install tensorflow-gpu=1.14.0
 ```
-## Install runtime
-If you want to run tests, install a runtime that can run ONNX models. For example:
-
-ONNX Runtime (available for Linux, Windows, and Mac):
-
-```pip install onnxruntime```
-
-For pytorch/caffe2, follow the instructions here:
-
-```https://pytorch.org/```
-
-
-We tested with pytorch/caffe2 and onnxruntime and unit tests are passing for those.
-
 # Installation
-## From pypi
-```pip install -U tf2onnx```
-
 ## From Source
 Once dependencies are installed, from the tensorflow-onnx folder call:
 
 ```
-python setup.py install
-or 
-python setup.py develop
+python3 setup.py install
 ```
 tensorflow-onnx requires onnx-1.5 or better and will install/upgrade onnx if needed.
-
-To create a distribution:
-```
-python setup.py bdist_wheel
-```
 
 # Usage
 
